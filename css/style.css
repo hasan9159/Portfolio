@@ -1,0 +1,728 @@
+/* =========================================================================
+   Light Theme Digital Resume Variables & Base
+   ========================================================================= */
+:root {
+    --bg-white: #ffffff;
+    --bg-light-grey: #f8f9fa;
+    /* Very subtle grey for alternating sections */
+    --bg-yellow: #fad34d;
+    /* Hero background / Bright yellow */
+    --accent-yellow: #fecb00;
+    /* Underline highlight */
+
+    --text-dark: #1f2937;
+    /* Primary dark text */
+    --text-grey: #4b5563;
+    /* Secondary text, paragraphs */
+
+    --card-bg: #ffffff;
+    --card-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+    --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --card-border: #f3f4f6;
+
+    --btn-primary: #1f2937;
+    --btn-primary-text: #ffffff;
+
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --transition: all 0.3s ease;
+    --nav-height: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: var(--bg-white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================================================================
+   Typography & Shared Layout
+   ========================================================================= */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+p {
+    color: var(--text-grey);
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.bg-white {
+    background-color: var(--bg-white);
+}
+
+.bg-light-grey {
+    background-color: var(--bg-light-grey);
+    border-top: 1px solid var(--card-border);
+    border-bottom: 1px solid var(--card-border);
+}
+
+.bg-yellow {
+    background-color: var(--bg-yellow);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 6rem 0;
+}
+
+/* Center Aligned Section Titles with Yellow Underline */
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-line {
+    width: 80px;
+    height: 6px;
+    background-color: var(--accent-yellow);
+    margin: 0 auto 3rem auto;
+    border-radius: 4px;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: -1.5rem auto 3rem auto;
+}
+
+.mb-super {
+    margin-bottom: 5rem;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    color: var(--text-grey);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* =========================================================================
+   Buttons & Cards
+   ========================================================================= */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.8rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    border-radius: 30px;
+    /* Pillow shape for modern resume style */
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--btn-primary);
+    color: var(--btn-primary-text);
+}
+
+.btn-primary:hover {
+    background-color: #374151;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--btn-primary);
+    border: 2px solid var(--btn-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--btn-primary);
+    color: var(--btn-primary-text);
+    transform: translateY(-2px);
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/* Default Rounded Card */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-hover);
+    border-color: #e5e7eb;
+}
+
+/* =========================================================================
+   Navigation Bar (Sticky)
+   ========================================================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-height);
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    letter-spacing: -0.5px;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--text-grey);
+    font-size: 0.95rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--text-dark);
+}
+
+/* Hamburger - mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 3px;
+    background-color: var(--text-dark);
+    transition: var(--transition);
+}
+
+/* =========================================================================
+   Grid Utilities
+   ========================================================================= */
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.cards-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.cols-3 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.cols-2 {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.cols-1 {
+    grid-template-columns: 1fr;
+}
+
+.narrow {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-start {
+    align-items: start;
+}
+
+/* =========================================================================
+   Hero Section
+   ========================================================================= */
+.hero {
+    min-height: 90vh;
+    padding-top: var(--nav-height);
+    /* Offset sticky nav */
+    display: flex;
+    align-items: center;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration-placeholder {
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 1/1;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    /* Blob shape for illustration */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.greeting {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.name {
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-grey);
+    margin-bottom: 0.5rem;
+}
+
+.short-line {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--btn-primary);
+    border-radius: 50%;
+    color: #fff;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* =========================================================================
+   About Section
+   ========================================================================= */
+.title-left {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-details {
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+.about-details ul li {
+    margin-bottom: 0.8rem;
+    color: var(--text-grey);
+}
+
+.about-details ul li:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    font-weight: 700;
+    color: var(--text-dark);
+    display: inline-block;
+    width: 80px;
+}
+
+.about-photo-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--card-border);
+    transition: var(--transition);
+}
+
+.about-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-hover);
+    border-color: #1f2933;
+}
+
+/* =========================================================================
+   Cards: Icon, List, Timeline, Plain
+   ========================================================================= */
+/* Icon styling (Languages & Tech) */
+.icon-card {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+}
+
+.card-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.icon-card h3 {
+    font-size: 1.25rem;
+}
+
+/* =========================================================================
+   Skills Section (Progress Bars)
+   ========================================================================= */
+.skills-wrapper {
+    background-color: var(--bg-light-grey);
+    border: none;
+}
+
+.skill-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.skill-item {
+    width: 100%;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e2e8f0;
+    /* Light grey track */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--accent-yellow);
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+/* Timeline Card (Experience) */
+.timeline-card h3 {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 0.2rem;
+}
+
+.timeline-date {
+    font-weight: 600;
+    color: var(--accent-yellow);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.timeline-card ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.timeline-card ul li {
+    color: var(--text-grey);
+    margin-bottom: 0.5rem;
+}
+
+/* Plain Card */
+.plain-card p {
+    margin-bottom: 0.25rem;
+}
+
+/* Project Card */
+.project-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.project-img-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
+
+.project-content {
+    padding: 2rem;
+}
+
+/* Contact Specific */
+.contact.section {
+    padding-top: 6rem;
+}
+
+.contact .highlight-line {
+    margin-bottom: 4rem;
+    /* Match the vertical spacing from the picture */
+}
+
+.contact-list li {
+    margin-bottom: 1rem;
+    color: var(--text-grey);
+}
+
+.contact-list li a {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.contact.bg-light-grey {
+    background-color: #f4f6f8;
+    /* slightly darker grey background to make white cards pop */
+}
+
+.form-input,
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background-color: #f8fafc;
+    /* Very light subtle inset grey for inputs */
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.input-field:focus,
+.textarea-field:focus {
+    outline: none;
+    border-color: var(--accent-yellow);
+    background-color: var(--bg-white);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--text-grey);
+    font-size: 0.95rem;
+    border-top: 1px solid var(--card-border);
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+/* =========================================================================
+   Reveal Animations
+   ========================================================================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active,
+.reveal-left.active,
+.reveal-right.active {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* =========================================================================
+   Mobile Responsiveness
+   ========================================================================= */
+@media (max-width: 992px) {
+    .nav-menu ul {
+        gap: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .grid-2-col {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: var(--nav-height);
+        left: -100%;
+        background-color: var(--bg-white);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .grid-2-col {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .title-left {
+        text-align: center;
+    }
+
+    .about-details {
+        text-align: left;
+    }
+
+    .hero-image {
+        order: 2;
+        margin-top: 2rem;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .about-photo-wrapper {
+        justify-content: center;
+    }
+}

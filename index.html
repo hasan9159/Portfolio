@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohamed Kasen M - Digital Resume">
+    <title>Mohamed Kasen M | Digital Resume</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Digital Resume</a>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#languages" class="nav-link">Languages</a></li>
+                    <li><a href="#technology" class="nav-link">Technology</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-yellow" id="home">
+        <div class="container hero-container grid-2-col">
+            <!-- Left: Placeholder Illustration -->
+            <div class="hero-image reveal-left">
+                <div class="illustration-placeholder">
+                    <h2>👨‍💻</h2>
+                </div>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="hero-content reveal-right">
+                <p class="greeting">HELLO!</p>
+                <h1 class="name">I'm Mohamed Kasen</h1>
+                <h2 class="subtitle">Full-Stack Developer</h2>
+                <p class="short-line">Web Developer & Python Developer</p>
+
+                <div class="hero-buttons">
+                    <a href="#experience" class="btn btn-primary">Work Experience &rarr;</a>
+                    <a href="assets/Mohamed_Kasen_Resume.pdf" class="btn btn-secondary" target="_blank"
+                        rel="noopener noreferrer">Resume &darr;</a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/in/mohamed-kasen" target="_blank" aria-label="LinkedIn"><svg
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg></a>
+                    <a href="mailto:mohamedhasan9159@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section bg-white" id="about">
+        <div class="container grid-2-col">
+            <!-- Left: Content -->
+            <div class="about-content reveal">
+                <h2 class="title-left">Hello! I'm Mohamed Kasen.</h2>
+                <p>
+                    I'm a Full-Stack Developer passionate about building responsive and scalable web applications. I
+                    focus on front-end development, Python backend development, SQL optimization, and building
+                    user-friendly systems. I have experience working with real-world projects, form-based applications
+                    and reporting systems.
+                </p>
+                <div class="about-details card">
+                    <ul>
+                        <li><span class="detail-label">Email :</span> mohamedhasan9159@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right: Photo -->
+            <div class="about-photo-wrapper reveal">
+                <img src="assets/images/portfolio.jpeg" alt="Mohamed Kasen M" class="about-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Programming Languages -->
+    <section class="languages section bg-light-grey" id="languages">
+        <div class="container reveal">
+            <h2 class="section-title">Programming Languages</h2>
+            <div class="highlight-line"></div>
+
+            <div class="cards-grid cols-2 narrow">
+                <div class="card icon-card">
+                    <div class="card-icon">🐍</div>
+                    <h3>Python</h3>
+                </div>
+                <div class="card icon-card">
+                    <div class="card-icon">🟨</div>
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Expertise -->
+    <section class="technology section bg-white" id="technology">
+        <div class="container reveal">
+            <h2 class="section-title">Technology Expertise</h2>
+            <div class="highlight-line"></div>
+            <p class="section-subtitle">
+                My technological expertise covers modern web development, backend systems, and database-driven
+                applications. I focus on delivering efficient and maintainable solutions.
+            </p>
+
+            <div class="cards-grid cols-3">
+                <div class="card icon-card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Web Application Development</h3>
+                </div>
+                <div class="card icon-card">
+                    <div class="card-icon">🐙</div>
+                    <h3>Git & GitHub</h3>
+                </div>
+                <div class="card icon-card">
+                    <div class="card-icon">🗄️</div>
+                    <h3>SQL / RDBMS</h3>
+                </div>
+                <div class="card icon-card">
+                    <div class="card-icon">☁️</div>
+                    <h3>AWS Cloud</h3>
+                </div>
+                <div class="card icon-card">
+                    <div class="card-icon">🔌</div>
+                    <h3>API Development</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section bg-white" id="skills">
+        <div class="container reveal">
+            <h2 class="section-title">My Skills</h2>
+            <div class="highlight-line"></div>
+
+            <p class="section-subtitle">
+                I am a quick learner and specialize in multitude of skills required for Web
+                Application Development and Python Development
+            </p>
+
+            <div class="card skills-wrapper">
+                <div class="cards-grid cols-2">
+                    <!-- Left Column -->
+                    <div class="skill-column">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python Programming</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML & CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PostgreSQL (RDBMS)</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="skill-column">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>jQuery</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git & GitHub</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>API Development</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AWS Cloud</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section bg-white" id="portfolio">
+        <div class="container reveal">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="highlight-line"></div>
+
+            <div class="cards-grid cols-1 narrow">
+                <div class="card project-card">
+                </div>
+                <div class="project-content">
+                    <h3>🛒 E-Commerce Website</h3>
+                    <p class="project-desc">
+                        Developed a responsive e-commerce web application using HTML, CSS, JavaScript, Python and
+                        SQL.
+                        Implemented product browsing, cart functionality and mock checkout with backend data
+                        storage.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section bg-light-grey" id="experience">
+        <div class="container reveal">
+            <h2 class="section-title">Experience</h2>
+            <div class="highlight-line"></div>
+
+            <div class="cards-grid cols-2">
+                <div class="card timeline-card">
+                    <h3>Database Intern – DSRC</h3>
+                    <p class="timeline-date">Feb 2025 – Mar 2025</p>
+                    <ul>
+                        <li>Optimized SQL queries for analytics and reports (30% faster)</li>
+                        <li>Built joins and aggregation queries for dashboards</li>
+                    </ul>
+                </div>
+
+                <div class="card timeline-card">
+                    <h3>Full-Stack Intern – BIZPLUS Services</h3>
+                    <p class="timeline-date">Jul 2025 – Nov 2025</p>
+                    <ul>
+                        <li>Built responsive web forms using HTML, CSS, JavaScript and jQuery</li>
+                        <li>Implemented validation, image preview and dynamic address handling</li>
+                        <li>Collaborated with senior developers to improve UI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-certs section bg-white" id="education">
+        <div class="container reveal">
+
+            <h2 class="section-title">Education</h2>
+            <div class="highlight-line"></div>
+            <div class="cards-grid cols-2 mb-super narrow">
+                <div class="card plain-card">
+                    <p><strong>MCA</strong> – Guru Nanak College, Chennai</p>
+                    <p class="text-sm">2024 – 2026</p>
+                </div>
+                <div class="card plain-card">
+                    <p><strong>BCA</strong> – The New College, Chennai</p>
+                    <p class="text-sm">2021 – 2024</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">Certifications</h2>
+            <div class="highlight-line"></div>
+            <div class="cards-grid cols-1 narrow">
+                <div class="card plain-card text-center">
+                    <p><strong>🏆 AWS Certified Cloud Practitioner</strong></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section class="contact section bg-light-grey" id="contact">
+        <div class="container reveal">
+            <h2 class="section-title">Contact</h2>
+            <div class="highlight-line"></div>
+
+            <div class="cards-grid cols-2 align-start">
+
+                <div class="card contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to reach out to me for roles or freelance queries.</p>
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> <a
+                                href="mailto:mohamedhasan9159@gmail.com">mohamedhasan9159@gmail.com</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:+919159063085">+91-9159063085</a></li>
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohamed-kasen"
+                                target="_blank" rel="noopener noreferrer">linkedin.com/in/mohamed-kasen</a></li>
+                    </ul>
+                </div>
+
+                <div class="card contact-form-card">
+                    <form id="contactForm" action="https://formsubmit.co/mohamedhasan9159@gmail.com" method="POST">
+                        <!-- Disable Captcha (optional but helpful) -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="name" class="input-field" placeholder="Name" required>
+                        <input type="email" name="email" class="input-field" placeholder="Email" required>
+                        <textarea name="message" class="textarea-field" placeholder="Message" rows="4"
+                            required></textarea>
+                        <button type="submit" class="btn btn-primary btn-full">Send ✉</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-white">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Mohamed Kasen M. Digital Resume.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
